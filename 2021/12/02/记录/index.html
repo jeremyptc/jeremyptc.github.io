@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">284</span>
+            <span class="post-count">417</span>
         </span>
     </span>
 
@@ -103,7 +103,7 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>##1金三胖<br>这是一个gif很显然里面有flag，这时候只需将gif分解成一帧一帧即可。用Stegsolve分解就能得到flag。这个软件需要java环境。<br><img src="/images/jin1.jpg"><br><img src="/images/jin2.jpg"><br><img src="/images/jin3.jpg"><br>最后得到flag{he11o hongke}<br>注意这里是数字1而不是字母l！！！<br>##2二维码<br>这个二维码用手机扫后没有得到任何信息。在Stegsolve里也没有得到啥有用的东西。<br>大概率里面有压缩包。然后用kali去分离二维码里的压缩包。<br>step1：<br>binwalk -e QR_code.png使用此命令可以分解压缩包。如果使用windows，也可以自己安装binwalk，需要python环境。<br>Kali自带binwalk会省事一点。<br>step 2：<br>dd if=QR_code.png of=flag.zip skip=471 bs=1<br>dd 是一个分离隐形文件的命令。这时你会发现你会得到一个安装包。但你点开时发现需要密码。<br>那么接下来就要进行比较帅气的暴力破解<br>step 3：<br>这要用到fcrackzip。<br>下载安装：sudo apt-get install fcrackzip<br>然后破解fcrakczip -b -c1 -l 1-4 -u flag.zip<br>你会得到密码7639<br><img src="/images/erweima.jpg"><br>得到内容CTF{vjpw_wnoei}<br>把ctf换成flag即可。</p>
+  <p>##1金三胖<br>这是一个gif很显然里面有flag，这时候只需将gif分解成一帧一帧即可。用Stegsolve分解就能得到flag。这个软件需要java环境。<br><img src="/images/jin1.jpg"><br><img src="/images/jin2.jpg"><br><img src="/images/jin3.jpg"><br>最后得到flag{he11o hongke}<br>注意这里是数字1而不是字母l！！！<br>##2二维码<br>这个二维码用手机扫后没有得到任何信息。在Stegsolve里也没有得到啥有用的东西。<br>大概率里面有压缩包。然后用kali去分离二维码里的压缩包。<br>step1：<br>binwalk -e QR_code.png使用此命令可以分解压缩包。如果使用windows，也可以自己安装binwalk，需要python环境。<br>Kali自带binwalk会省事一点。<br>step 2：<br>dd if=QR_code.png of=flag.zip skip=471 bs=1<br>dd 是一个分离隐形文件的命令。这时你会发现你会得到一个安装包。但你点开时发现需要密码。<br>那么接下来就要进行比较帅气的暴力破解<br>step 3：<br>这要用到fcrackzip。<br>下载安装：sudo apt-get install fcrackzip<br>然后破解fcrakczip -b -c1 -l 1-4 -u flag.zip<br>你会得到密码7639<br><img src="/images/erweima.jpg"><br>得到内容CTF{vjpw_wnoei}<br>把ctf换成flag即可。<br>##3你竟然赶我走<br>这道题拿到的仍然是是一张图片所以我就想着把它放到了stegsolve里，用了File Format.<br>直接得到了<br><img src="/images/zou1.png"><br>一下子就看到flag了（flag自带光芒~）我直接复制粘贴过去发现并不对，原来有三处空格要把它删掉才可，实在不行打一遍也行。<br>这里再说一下File Format 通过这个工具你会看见图片的具体信息有时候有些图片隐写的flag会藏在这里。</p>
  
       <!-- reward -->
       
