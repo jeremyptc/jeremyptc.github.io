@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">653</span>
+            <span class="post-count">681</span>
         </span>
     </span>
 
@@ -109,6 +109,7 @@
 <p>##4N种解决方式<br>这个是一个exe文件，因为安全问题直接点击系统是不会让你打开的。这时候我们把他的后缀改为txt文本的形式，发现可以打开，得到了一串代码。<br><img src="/images/n1.png"><br>我们发现在这堆代码中有一个base64，然后我们就把这整个代码复制下来到在线解密网站上，将base64转换为图片。<br><img src="/images/n2.png"><br>用手机扫描二维码得到flag<br>flag{dca57f966e4e4e31fd5b15417da63269}</p>
 <p>##5大白<br><img src="/images/bai1.png"><br>首先我们下载图片后发现只有一半。<br>我们把它用winhex打开。<br><img src="/images/bai2.png"><br>第二行开始前四位为宽后四位为高。我们将后面的1 00改为2 A7<br><img src="/images/bai3.png"><br>保存后会获得一张完整图片里面有flag。<br><img src="/images/bai4.png"></p>
 <p>##6基础爆破<br><img src="images/po1.png"><br>题目是一个加密的文件，根据提示用ARCHPR进行4位数的掩码爆破<br><img src="images/po2.png"><br><img src="images/po3.png"><br>得到压缩包口令2563<br>里面是一个flag文档<br>base64解密后得到flag<br><img src="images/po4.png"></p>
+<p>##7乌镇峰会种图<br>题目是一张图片<br><img src="images/wu1.png"><br>放入stegsolve分析获得flag<br><img src="images/wu2.png"><br>flag中间的空格要删掉</p>
  
       <!-- reward -->
       
