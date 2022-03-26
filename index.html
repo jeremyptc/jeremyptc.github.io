@@ -171,7 +171,7 @@
     
     
     <article
-  id="post-基础爆破"
+  id="post-qfnu"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -182,8 +182,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2022/03/25/%E5%9F%BA%E7%A1%80%E7%88%86%E7%A0%B4/"
-    >基础爆破</a> 
+  <a class="article-title" href="/2022/03/25/qfnu/"
+    >qfnu</a> 
 </h2>
  
 
@@ -191,14 +191,21 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2022/03/25/%E5%9F%BA%E7%A1%80%E7%88%86%E7%A0%B4/" class="article-date">
+      <a href="/2022/03/25/qfnu/" class="article-date">
   <time datetime="2022-03-25T01:17:45.000Z" itemprop="datePublished">2022-03-25</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-   
+  <p>##misc<br>1.签到<br>扫描二维码得到flag</p>
+<p>2真签到<br>打开文档是base85的编码，利用在线解码解出来base32编码，再解码得到一个base64的编码。<br>输入发现并不是flag，根据提示微信，搜了一下微信号在个性签名里找到了flag。</p>
+<p>##web</p>
+<p>1robts<br>根据提示，爬取别人网站首先要检查 robots.txt，所以检查检查 robots.txt后得到了另一个提示<br><img src="/images/robots1.png"><br>输入网址拿到了flag<br><img src="/images/robots2.png"></p>
+<p>2easy game<br>在网页源代码中发现一段可疑的代码，根据提示去访问<br><img src="/images/game1.png"><br>再一次查看源代码发现flag<br><img src="/images/game2.png"></p>
+<p>##古典代码<br>1根据所给的线索，发现线索由猪圈密码和银河密码组成，对照密码表得到了一串英文字母，输入发现不是flag<br>再由栅栏密码解码解出flag<br><img src="/images/class1.png"></p>
+<p>##逆向<br>1截屏截出来的</p>
+ 
       <!-- reward -->
       
     </div>
