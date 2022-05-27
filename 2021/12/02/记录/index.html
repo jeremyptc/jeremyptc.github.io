@@ -84,7 +84,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">747</span>
+            <span class="post-count">887</span>
         </span>
     </span>
 
@@ -93,7 +93,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">2 min</span>
+            <span class="post-count">3 min</span>
         </span>
     </span>
 </div>
@@ -116,6 +116,8 @@
 <p>##8隐藏的钥匙<br>把图片放入010editor分析，得到了有关flag的线索是一串base64编码<br><img src="/images/yao1.png"><br>进行编译得到flag。<br><img src="/images/yao2.png"></p>
 <p>##9另一个世界<br>在010editor里发现了一串二进制编码，对其八个一组进行转ASCII码<br><img src="/images/ling1.png"><br><img src="/images/ling2.png"></p>
 <p>##10音频隐写（ctfshow）<br>一段音频，很明显左声道里的是摩斯密码。<br><img src="/images/%E9%9F%B32.png"><br>将摩斯密码解码得到flag。<br><img src="/images/%E9%9F%B31.png"></p>
+<p>#LSB<br><img src="/images/LSB1.png"><br>题目提示这是一道LSB隐写题目，直接放入stegsolve进行分析<br><img src="/images/LSB2.png"><br>保存图片是一张二维码，扫描二维码即可。<br><img src="/images/LSB3.png"></p>
+<p>#极客大挑战secret File<br><img src="/images/%E6%9E%81%E5%AE%A21.png"><br>首先看一下它的源代码发现了一个Archive_room.php<br>点击后他告诉我们就在这里<br><img src="/images/%E6%9E%81%E5%AE%A22.png"><br>但是点击secret后却显示已经过去了。我们对网页进行抓包<br>这时我们用到Burp Suite Professional<br>在浏览器设置里找到代理设置打开手动设置代理输入端口和的地址<br>然后打开Burp Suite Professional</p>
  
       <!-- reward -->
       
