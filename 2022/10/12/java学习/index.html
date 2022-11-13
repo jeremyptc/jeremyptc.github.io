@@ -84,7 +84,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">507</span>
+            <span class="post-count">672</span>
         </span>
     </span>
 
@@ -93,7 +93,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -106,7 +106,7 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>一：封装性<br>为了代码的安全性（合乎正常逻辑）采用封装思想。<br>使用：<br>用private修饰符限制，采用的方法及对象代表什么，就得封装对应的数据，比提供数据对应的行为。<br>二：this关键字<br>就近原则。<br>Java里变量分为局部变量和成员变量（Java里没有全局变量），定义在方法（函数）里的变量叫做局部变量。<br>定义在方法外类内的变量叫做成员变量。<br>使用：<br>this.变量名（例：this.age）<br>构造方法（函数）时经常使用<br><img src="/images/this1.png"><br>this关键字目的是调用离调用语句较远的同名变量。<br>三：构造方法（函数）<br>作用：在创建对象时给成员变量赋值的<br>格式：<br><img src="/images/gouzao1.png"><br>注意事项：<br>构造方法没有返回值类型，连void也没有，也不能由return返回。<br>当没有定义构造方法时，系统会给出一个默认的无参构造方法。<br>但如果定义了构造方法，系统将不再提供默认的构造方法。（所以不论用到用不到，无参构造有参构造全部写上）<br>四：标准Javabean类<br><img src="/images/javabean1.png"><br>简便生成JavaBean标准类：<br>快捷方式：Alt + Fn + Inster<br>插件：ptg（右键Ptg to javabean）<br>五：static关键字<br>对于学校更名要将所有学生对象信息里的学校属性更改，一个个进行操作显然不可能。我们运用static关键字将其变为公共属性，<br>然后只修改一处属性，其余对象的属性也随之更改。<br><img src="/images/static1.png"><br><img src="/images/static2.png"><br>六：继承,super关键字<br>继承语法：class A extends B<br>注意事项：Java不支持多类继承，一个类只能有一个父类。<br>super关键字可以在子类中访问父类的非私有方法，非私有属性，以及构造方法。<br>super.方法名（参数1，参数2，……）<br>super.属性<br>super（参数1，参数2，…..）<br><img src="/images/super1.png"><br><img src="/images/super2.png"><br><img src="/images/super3.png"><br>super关键字调用父类构造函数，形参要加上父类的.</p>
+  <p>一：封装性<br>为了代码的安全性（合乎正常逻辑）采用封装思想。<br>使用：<br>用private修饰符限制，采用的方法及对象代表什么，就得封装对应的数据，比提供数据对应的行为。<br>二：this关键字<br>就近原则。<br>Java里变量分为局部变量和成员变量（Java里没有全局变量），定义在方法（函数）里的变量叫做局部变量。<br>定义在方法外类内的变量叫做成员变量。<br>使用：<br>this.变量名（例：this.age）<br>构造方法（函数）时经常使用<br><img src="/images/this1.png"><br>this关键字目的是调用离调用语句较远的同名变量。<br>三：构造方法（函数）<br>作用：在创建对象时给成员变量赋值的<br>格式：<br><img src="/images/gouzao1.png"><br>注意事项：<br>构造方法没有返回值类型，连void也没有，也不能由return返回。<br>当没有定义构造方法时，系统会给出一个默认的无参构造方法。<br>但如果定义了构造方法，系统将不再提供默认的构造方法。（所以不论用到用不到，无参构造有参构造全部写上）<br>四：标准Javabean类<br><img src="/images/javabean1.png"><br>简便生成JavaBean标准类：<br>快捷方式：Alt + Fn + Inster<br>插件：ptg（右键Ptg to javabean）<br>五：static关键字<br>对于学校更名要将所有学生对象信息里的学校属性更改，一个个进行操作显然不可能。我们运用static关键字将其变为公共属性，<br>然后只修改一处属性，其余对象的属性也随之更改。<br><img src="/images/static1.png"><br><img src="/images/static2.png"><br>六：继承,super关键字<br>继承语法：class A extends B<br>注意事项：Java不支持多类继承，一个类只能有一个父类。<br>super关键字可以在子类中访问父类的非私有方法，非私有属性，以及构造方法。<br>super.方法名（参数1，参数2，……）<br>super.属性<br>super（参数1，参数2，…..）<br><img src="/images/super1.png"><br><img src="/images/super2.png"><br><img src="/images/super3.png"><br>super关键字调用父类构造函数，形参要加上父类的.<br>七：final关键字<br>使用：<br>final关键字修饰的类不可以继承（final class A）。<br>final关键字修饰的类的方法不能被重写覆盖（ pulic final void show（））。<br>final关键字修饰的变量为常量初始化后不能修改其值（final int AGE= 10）<br>八：抽象类<br>作用：<br>通过继承使得子类可以实现不同的功能；<br>注意：<br>1.如果一个非抽象类继承了抽象类，该类的所有抽象函数都必须重写；<br>2.抽象的类，方法不能实例化；<br>3.抽方法只需声明不需要实现；<br>4.抽象类必须被继承才能使用；<br>代码：<br><img src="/images/abstract1.png"></p>
  
       <!-- reward -->
       
